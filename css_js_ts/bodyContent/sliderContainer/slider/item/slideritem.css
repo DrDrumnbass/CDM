@@ -1,0 +1,28 @@
+.slideritem {
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: 100%;
+    counter-increment: slide;
+    position: relative;
+    user-select: none;
+    will-change: transform;
+    cursor: pointer;
+}
+
+.slideritem:nth-child(1) {
+    background-image: url(../../../../../images/horizontalImage.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slideritem:nth-child(2) {
+    background-image: url(../../../../../images/verticalImage.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slideritem:nth-child(3) {
+    background-image: url(../../../../../images/horizontalImage.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}

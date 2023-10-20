@@ -1,0 +1,16 @@
+.underHeaderline {
+    margin: 0 100px;
+    border: 1px solid #000;
+}
+
+@media screen and (min-device-width: 320px) {
+    .underHeaderline {
+        display: none;
+    }
+}
+
+@media screen and (min-device-width: 1440px) {
+    .underHeaderline {
+        display: block;
+    }
+}

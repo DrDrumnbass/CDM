@@ -1,0 +1,7 @@
+.bodyContentsliderContainer {
+    max-width: 1100px;
+    height: 688px;
+    margin: 0 auto;
+    position: relative;
+    z-index: -2;
+}

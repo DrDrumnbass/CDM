@@ -1,0 +1,58 @@
+.newunderHeader {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    line-height: normal;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    overflow-y: scroll;
+}
+
+.newunderHeader::-webkit-scrollbar {
+    width: 7px;
+    background-color: rgba(0, 0, 0, 0.10);
+}
+
+.newunderHeader::-webkit-scrollbar-thumb {
+    background-color: #E07A7A;
+}
+
+@media screen and (min-device-width: 320px) {
+    .newunderHeader {
+        margin: 20px 60px 40px 60px;
+        font-size: 20px;
+        display: block;
+    }
+    
+    .underHeadermenuContainer .svgContainerbtn_amount_1, .underHeadermenuContainer .svgContainerbtn_amount_2 {
+        display: none;
+    }
+    
+    .underHeadermenuContainer .svgContainerbtn_amount_3, .underHeadermenuContainer .svgContainerbtn_amount_4 {
+        display: block;
+    }
+}
+
+@media screen and (min-device-width: 768px) {
+    .newunderHeader {
+        margin: 20px 110px 40px 110px;
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-device-width: 1440px) {
+    .newunderHeader {
+        margin: 40px 210px 100px 210px;
+        font-size: 28px;
+        display: flex;
+        overflow-y: hidden;
+    }
+    
+    .underHeadermenuContainer .svgContainerbtn_amount_1, .underHeadermenuContainer .svgContainerbtn_amount_2 {
+        display: block;
+    }
+    
+    .underHeadermenuContainer .svgContainerbtn_amount_3, .underHeadermenuContainer .svgContainerbtn_amount_4 {
+        display: none;
+    }
+}

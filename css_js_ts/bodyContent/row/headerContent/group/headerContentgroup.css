@@ -1,0 +1,19 @@
+.headerContentgroup {
+    display: flex;
+    column-gap: 20px;
+    font-size: 20px;
+    line-height: 23.44px;
+    align-items: center;
+}
+
+@media screen and (min-device-width: 320px) {
+    .headerContentgroup:nth-of-type(2) {
+        display: none;
+    }
+}
+
+@media screen and (min-device-width: 1440px) {
+    .headerContentgroup:nth-of-type(2) {
+        display: flex;
+    }
+}

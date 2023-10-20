@@ -1,0 +1,19 @@
+.groupsvgContainer_hovered:hover .svgContainerbtn_amount_1 {
+    cursor: pointer;
+    opacity: 0;
+}
+
+.groupsvgContainer_hovered:hover .svgContainerbtn_amount_2 {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.groupsvgContainer_hovered:hover .svgContainerbtn_amount_3 {
+    cursor: pointer;
+    opacity: 0;
+}
+
+.groupsvgContainer_hovered:hover .svgContainerbtn_amount_4 {
+    cursor: pointer;
+    opacity: 1;
+}

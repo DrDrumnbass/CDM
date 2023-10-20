@@ -1,0 +1,22 @@
+.underHeadermenuContainer {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+@media screen and (min-device-width: 320px) {
+    .underHeadermenuContainer {
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-device-width: 1440px) {
+    .underHeadermenuContainer {
+        justify-content: normal;  
+    }
+    
+    .svgContainerbtn_mobile {
+        display: none;
+    }
+}
