@@ -23,7 +23,7 @@ class Slider {
    * @param {String} prefix
    */
 
-  constructor(el: HTMLElement, config: object = {}, prefix: string = 'slider__') {
+  constructor(el: HTMLElement, config: object = {}, prefix: string = 'slider') {
 
     this.state = {
       prefix: prefix, // префикс для классов
@@ -72,7 +72,7 @@ class Slider {
    * @param {Object} config
    * @param {String} prefix
    */
-  static getOrCreateInstance(target: string | HTMLElement, config: object = {}, prefix: string = 'slider__'): Slider | void {
+  static getOrCreateInstance(target: string | HTMLElement, config: object = {}, prefix: string = 'slider'): Slider | void {
     try {
       const elSlider = typeof target === 'string' ? document.querySelector(target) : target;
       const result = this.getInstance(elSlider);
@@ -228,7 +228,7 @@ class Slider {
       'mouseenter': [this.state.el, this.onMouseEnter.bind(this), true],
       'mouseleave': [this.state.el, this.onMouseLeave.bind(this), true],
       'resize': [window, this.onResize.bind(this), this.config.refresh],
-      'slider__transition-start': [this.state.elItems, this.onTransitionStart.bind(this), this.config.loop],
+      'slidertransition-start': [this.state.elItems, this.onTransitionStart.bind(this), this.config.loop],
       'transitionend': [this.state.elItems, this.onTransitionEnd.bind(this), this.config.loop],
       'touchstart': [this.state.el, this.onSwipeStart.bind(this), this.config.swipe],
       'mousedown': [this.state.el, this.onSwipeStart.bind(this), this.config.swipe],
@@ -341,7 +341,7 @@ class Slider {
     this.updateClasses();
     this.state.translate = transform;
     this.state.elItems.style.transform = `translate3D(${transform}px, 0px, 0.1px)`;
-    this.state.elItems.dispatchEvent(new CustomEvent('slider__transition-start', {
+    this.state.elItems.dispatchEvent(new CustomEvent('slidertransition-start', {
       bubbles: true
     }));
   }
