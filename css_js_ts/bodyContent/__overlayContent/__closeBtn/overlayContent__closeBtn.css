@@ -1,0 +1,6 @@
+.overlayContent__closeBtn {
+    position: absolute;
+    top: 20;
+    right: 30;
+    cursor: pointer;
+}

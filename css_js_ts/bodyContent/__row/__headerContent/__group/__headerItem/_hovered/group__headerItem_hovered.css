@@ -1,0 +1,7 @@
+.group__headerItem_hovered:hover {
+    cursor: pointer;
+        &:after {
+            width: 100%;
+            left: 0;
+        }
+}

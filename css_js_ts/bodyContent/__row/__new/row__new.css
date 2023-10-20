@@ -1,0 +1,13 @@
+.row__new {
+    width: -webkit-fill-available;
+    position: absolute;
+    left: 0;
+    height: 480px;
+    top: -480px;
+    background-color: #fff;
+    line-height: normal;
+    font-style: normal;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+}
