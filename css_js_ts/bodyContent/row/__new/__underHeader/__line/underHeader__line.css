@@ -1,0 +1,16 @@
+.underHeader__line {
+    margin: 0 100px;
+    border: 1px solid #000;
+}
+
+@media screen and (min-device-width: 320px) {
+    .underHeader__line {
+        display: none;
+    }
+}
+
+@media screen and (min-device-width: 1440px) {
+    .underHeader__line {
+        display: block;
+    }
+}

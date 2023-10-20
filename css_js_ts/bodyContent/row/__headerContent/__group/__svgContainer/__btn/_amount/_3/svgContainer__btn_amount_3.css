@@ -1,0 +1,5 @@
+.svgContainer__btn_amount_3 {
+    transition: opacity 0.2s ease-in-out;
+    opacity: 1;
+    display: none;
+}

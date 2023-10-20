@@ -1,0 +1,21 @@
+.bodyContentRow {
+    background-color: #fff;
+}
+
+@media screen and (min-device-width: 320px) {
+    .bodyContentRow {
+        padding: 20px 50px;
+    }
+}
+
+@media screen and (min-device-width: 768px) {
+    .bodyContentRow {
+        padding: 20px 100px;
+    }
+}
+
+@media screen and (min-device-width: 1440px) {
+    .bodyContentRow {
+        padding: 20px 200px;
+    }
+}
