@@ -3,7 +3,7 @@ btnDownload.addEventListener('click', handleDownload);
 
 function handleDownload() {
   // Get the current active slide
-  const activeSlide = document.querySelector('.slider__item_active') as HTMLElement;
+  const activeSlide = document.querySelector('.slider__item_active');
 
   // Get the image URL of the active slide from the data-image-url attribute
   const imageURL = activeSlide.getAttribute('data-image-url');
